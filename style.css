@@ -1,0 +1,209 @@
+/*apricot, roca one, cheque*/
+
+@font-face {
+    font-family: 'Roca';
+    src: local('Roca One Regular'), local('Roca-One-Regular'),
+        url('fuentes/RocaOne-Rg.woff2') format('woff2'),
+        url('fuentes/RocaOne-Rg.woff') format('woff'),
+        url('fuentes/RocaOne-Rg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+.titulo_video{
+  color:#507ef3;
+}
+@font-face{ 
+    font-family: 'Now';
+    src: url('fuentes/now.light.otf');
+    font-weight: 700;
+}
+
+html {
+  background-color: #ead2b2;
+  background-image: url('imagenes/fondo-encabezado_2.webp');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Roca";
+}
+.tamano-25px{
+  font-size: 25px;
+}
+p{
+    font-family: "Now";
+    font-weight: 600;
+}
+#audioPlayer {
+  display: none;
+}
+#audioLink{
+  text-decoration: none;
+  font-size:15px;
+  font-family: 'Now';
+}
+.texto-rojo{
+  color:red; 
+  font-weight: 100;
+}
+
+.texto-azul{
+  color:#142d62; 
+  font-weight: 100;
+}
+
+div.encabezado{
+  margin: 10% 15% 2% 15%;
+  text-align: center;
+}
+
+.encabezado h1{
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+}
+
+.imagen:hover{
+  cursor: pointer;
+}
+
+.titular{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ramas_arte img{ 
+  max-width: 100%;
+  height: auto;
+}
+
+.principales_obras_expositores > h2{
+  text-align: justify;
+  margin: 0% 20% 0% 20%;
+  padding-bottom: 2.5%;
+}
+
+.display_2{
+  font-size: 17px;
+}
+
+.imagen_expositor{
+  max-height: 300px;
+  width:250px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+}
+ .principales_obras_expositores_imagenes, .siglo_xx_seccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .titular{
+    flex-direction: column;
+    text-align: center;
+  }
+  .principales_obras_expositores_imagenes, .siglo_xx_seccion{
+    flex-direction: column;
+  }
+  
+  div.encabezado{
+    margin: 5% 0% 0% 0%;
+    text-align: left;
+  }
+  .principales_obras_expositores{
+    margin-left: 0%;
+  }
+  .principales_obras_expositores > h2{
+    margin: 0% 0% 0% 0%;
+    text-align: left;
+  }
+  .margin-justify{
+    font-family: 'Now'; 
+    text-align: left; 
+    font-size: 20px; 
+    font-weight: 800; 
+  }
+  .margin-justify-mini{
+    text-align: left; 
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  iframe{
+    width:685px; 
+    height:385px;
+  }
+  .titular{
+    flex-direction: row;
+  }
+  .principales_obras_expositores_imagenes, .siglo_xx_seccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .margin-justify{
+      font-family: 'Now'; 
+      text-align: justify; 
+      font-size: 20px; 
+      font-weight: 800; 
+      margin: 0% 15% 2% 15%;
+  }
+  .margin-justify-mini{
+    text-align: left; 
+    margin: 2% 15% 5% 15%;
+  }
+  .principales_obras_expositor_uno{
+    padding:10px;
+  }
+  .principales_obras_expositor_dos{
+    padding:10px;
+  }
+  .principales_obras_expositor_cuatro{
+    padding:10px;
+  }
+  .principales_obras_expositor_tres{
+    padding:10px;
+  }
+  .siglo_xx_seccion{
+    margin: 0% 20% 0% 20%;
+  }
+}
+
+footer{
+  background-color: #dc4254;
+  color:white;
+  position:relative;
+  margin-right:-8px;
+  margin-left:-8px;
+  margin-bottom:-8px;
+  padding:5px 5px 5px 15px;
+}
+
+.ramas_arte h2{
+  margin: 2% 20% 2% 20%;
+}
+
+.imagen{
+  max-height: 350px;
+  width:250px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+}
+
+.imagen_bandera_dominicana{
+  height:60px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+}
+
+.quisqueya{
+  background: linear-gradient(to right, #db384e,#162e63);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 800 !important;
+}
+
+
